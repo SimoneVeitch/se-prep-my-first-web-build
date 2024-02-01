@@ -13,6 +13,24 @@ h2 {
     letter-spacing: 0.5px;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+    color: #07197c;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+
 
 /* HEADER ----------------------- */
 .header .navigation {
@@ -96,6 +114,17 @@ li.navelement {
 
 .profile-picture {
     max-width: 100%;
+}
+
+/* FOLIO ----------------------- */
+
+.folio {
+background-color: #486fd2;
+width: auto;
+height: 300px;
+border-radius: 24px;
+margin:  10px 50px;
+padding: 10px;
 }
 
 /* RESPONSIVE ----------------------- */
