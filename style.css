@@ -287,6 +287,10 @@ footer {
 .about p {
   margin-right: 20px;
 }
+
+.about h2 {
+  margin-right: 20px;
+}
 }
 
 @media only screen and (max-width: 500px) {
@@ -302,4 +306,26 @@ footer {
     padding-top: 0%;
     padding-bottom: 25px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .header .navigation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+li.navelement {
+   display: flex; 
+   position: relative;
+   list-style: none;
+   padding: 5px;
+   text-align: center;
+}
+
+.header .navigation li a {
+    font-size: 10px;
+}
+
 }
