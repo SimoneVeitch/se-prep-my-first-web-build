@@ -308,7 +308,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .header .navigation {
     display: block;
     margin-left: auto;
@@ -327,5 +327,4 @@ li.navelement {
 .header .navigation li a {
     font-size: 10px;
 }
-
 }
