@@ -34,15 +34,12 @@ h1 {
 
 /* HEADER ----------------------- */
 .header .navigation {
-    display:flex;
+    display: flex;
     justify-content: center;
-    position: relative;
     top: 40%;
 }
 
 li.navelement {
-   display: flex; 
-   position: relative;
    list-style: none;
    padding: 25px;
    text-align: center;
@@ -64,8 +61,9 @@ li.navelement {
 
 .hero {
     display: flex;
-    margin: auto;
-    width: 50%;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 10px;
 }
 
@@ -94,7 +92,6 @@ li.navelement {
 
 .about .about-left {
     background: transparent;
-    position: relative;
     float: left;
     width: 50%;
     overflow: auto;
@@ -104,7 +101,6 @@ li.navelement {
 
 .about .about-right {
     background: transparent;
-    position: relative;
     float: right;
     width: 50%;
     overflow: auto;
@@ -119,12 +115,12 @@ li.navelement {
 /* FOLIO ----------------------- */
 
 .folio {
-background-color: #486fd2;
-width: auto;
-height: 300px;
-border-radius: 24px;
-margin:  10px 50px;
-padding: 10px;
+  background-color: #486fd2;
+  width: auto;
+  height: 300px;
+  border-radius: 24px;
+  margin:  10px 50px;
+  padding: 10px;
 }
 
 .folio h1 {
@@ -146,7 +142,6 @@ padding: 10px;
   background-color: #d0e3ff;
   overflow: auto;
   width: auto;
-  position: relative;
   margin: 50px;
   padding: 20px;
   border-radius: 24px;
@@ -157,14 +152,13 @@ input[type=text], select, textarea {
   padding: 12px; 
   border: none;
   border-radius: 10px; 
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  box-sizing: border-box; /* makes sure that padding and width stays in place */
   margin-top: 6px; 
   margin-bottom: 16px; 
   font-family: Arial, Helvetica, sans-serif;
   color: #07197c;
   font-size: 15px;
   letter-spacing: 0.5px;
-  text-align: justify;
   line-height: 20px;
 }
 
@@ -218,6 +212,8 @@ margin: auto;
 width: 25px;
 }
 
+/* Adding to make footer stick to bottom and fill space at the bottom. Need to set the body to 100% of the vh, which allows for flex boxes alignment to the bottom of the footer to work as the body tag is an initial container that also follows this rule, and is now tall enough to allow the footer to be at the bottom. */
+
 body {
   min-height: 100vh;
   display: flex;
@@ -229,17 +225,11 @@ footer {
 }
 
 
-/* RESPONSIVE ----------------------- */
+/* RESPONSIVE web ----------------------- */
 
 @media only screen and (max-width: 800px) {
     .hero h1 {
       font-size: 30px;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    .header .navigation li a {
-      font-size: 15px;
     }
   }
 
@@ -310,21 +300,17 @@ footer {
 
 @media only screen and (max-width: 700px) {
   .header .navigation {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 li.navelement {
-   display: flex; 
-   position: relative;
-   list-style: none;
    padding: 5px;
-   text-align: center;
 }
 
 .header .navigation li a {
-    font-size: 10px;
+    font-size: 12px;
+    text-align: center;
 }
 }
